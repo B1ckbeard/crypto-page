@@ -1,0 +1,95 @@
+$gradientReview: linear-gradient(92.01deg, rgba(124, 111, 207, 0.194) 0%, rgba(116, 174, 170, 0.19) 49.13%, rgba(111, 207, 151, 0.2) 100%);
+
+.review {
+        margin-bottom: 24px;
+        position: relative;
+        height: 138px;
+        width: 288px;
+        background-color: #302D2D57;
+        border-radius: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            background: $gradientReview border-box;
+            -webkit-mask:
+                -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box,
+                -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+            -webkit-mask:
+                linear-gradient(#fff 0 0) padding-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+        }
+
+        &_user {
+            height: 100%;
+            padding: 0 20px;
+
+            &_info {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin: 16px 0;
+                width: 48px;
+                height: 48px;
+
+                &-avatar {
+                    margin-right: 20px;
+
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+
+                &_nickname {
+                    &-name {
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        text-align: left;
+                        color: #F2F2F2;
+                        margin: 0 0 2px 0;
+                        text-transform: uppercase;
+                    }
+
+                    &-nick {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        text-align: left;
+                        color: #F2F2F266;
+                        margin: 0;
+                    }
+                }
+            }
+
+            &-message {
+                p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 20.7px;
+                    text-align: left;
+                    color: #F2F2F2;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+.left {
+    right: 112px;
+}
