@@ -1,8 +1,8 @@
 {
-  "name": "crypto-test",
+  "name": "crypto-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://b1ckbeard.github.io/crypto-test/",
+  "homepage": "https://b1ckbeard.github.io/crypto-page/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
